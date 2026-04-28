@@ -3,7 +3,8 @@ import { useParams, useNavigate } from 'react-router-dom';
 import {
   ArrowRight, Eye, BookOpen, Award, Briefcase,
   GraduationCap, Globe, ChevronDown, ChevronUp,
-  User, Microscope, ExternalLink, Mail, Calendar, Flag
+  User, Microscope, ExternalLink, Mail, Calendar, Flag,
+  FileText, Download
 } from 'lucide-react';
 import api, { fixPhoto } from '../utils/api';
 import { getDeptIcon, LINK_CONFIGS, degreeEn, titleEn, motherTongueEn } from '../utils/constants';
@@ -19,6 +20,7 @@ const TAB_IDS = [
   {id:'associations', icon:<Globe size={14}/>},
   {id:'publications', icon:<Microscope size={14}/>},
   {id:'links',        icon:<ExternalLink size={14}/>},
+  {id:'cv',           icon:<FileText size={14}/>},
 ];
 
 export default function InstructorProfile() {
@@ -336,6 +338,43 @@ export default function InstructorProfile() {
           </div>
         )}
 
+        {activeTab==='cv'&&(
+          <div className="info-card">
+            <div className="info-card-title">
+              <FileText size={16}/> {t('sec_cv')}
+            </div>
+            {data.cv_file ? (
+              <div style={{textAlign:'center',padding:'30px 20px'}}>
+                <div style={{fontSize:64,marginBottom:12}}>📄</div>
+                <div style={{fontSize:16,fontWeight:600,color:'var(--text)',marginBottom:20}}>{displayName}</div>
+                <a href={fixPhoto(data.cv_file)} target="_blank" rel="noopener noreferrer"
+                  style={{
+                    display:'inline-flex',
+                    alignItems:'center',
+                    gap:8,
+                    padding:'12px 28px',
+                    background:'var(--primary)',
+                    color:'#fff',
+                    borderRadius:8,
+                    fontSize:14,
+                    fontWeight:700,
+                    textDecoration:'none',
+                    transition:'all .2s'
+                  }}
+                  onMouseOver={e=>e.currentTarget.style.opacity='0.9'}
+                  onMouseOut={e=>e.currentTarget.style.opacity='1'}>
+                  <FileText size={16}/> {t('cv_open')}
+                </a>
+              </div>
+            ) : (
+              <div style={{textAlign:'center',padding:'60px 40px'}}>
+                <div style={{fontSize:48,marginBottom:14}}>📄</div>
+                <div style={{fontSize:15,color:'var(--text-muted)',fontWeight:600}}>{t('cv_no_file')}</div>
+              </div>
+            )}
+          </div>
+        )}
+
         {/* Footer */}
         <div style={{marginTop:28,padding:'14px 0',borderTop:'1px solid var(--border2)',display:'flex',justifyContent:'space-between',flexWrap:'wrap',gap:8,fontSize:12,color:'var(--text-muted)'}}>
           <span>{t('last_updated')} {new Date(data.last_updated).toLocaleString(lang==='ar'?'ar-IQ':'en-US')}</span>
@@ -364,7 +403,7 @@ function EmptySec({t}){
 function TabsBar({activeTab,setActiveTab,t}){
   const containerRef=React.useRef(null);
   const activeRef=React.useRef(null);
-  const tabLabels={personal:t('tab_personal'),academic:t('tab_academic'),skills:t('tab_skills'),positions:t('tab_positions'),teaching:t('tab_teaching'),awards:t('tab_awards'),associations:t('tab_assoc'),publications:t('tab_pubs'),links:t('tab_links')};
+  const tabLabels={personal:t('tab_personal'),academic:t('tab_academic'),skills:t('tab_skills'),positions:t('tab_positions'),teaching:t('tab_teaching'),awards:t('tab_awards'),associations:t('tab_assoc'),publications:t('tab_pubs'),links:t('tab_links'),cv:t('tab_cv')};
 
   React.useEffect(()=>{
     const c=containerRef.current,a=activeRef.current;

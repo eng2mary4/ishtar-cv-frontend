@@ -1,7 +1,7 @@
 export const translations = {
   ar: {
     nav_instructors:'التدريسيون', nav_institute:'معهد عشتار الطبي', nav_sub:'ISHTAR MEDICAL INSTITUTE',
-    hero_pill:'البوابة الأكاديمية الرسمية', hero_title1:'كوادر', hero_title2:'معهد عشتار', hero_title3:'الأكاديمية المتميزة',
+    hero_pill:'البوابة الأكاديمية الرسمية', hero_title1:'كوادر', hero_title2:'معهد عشتار', hero_title3:'الملاكات التدريسية في معهد عشتار الطبي التقني',
     hero_desc:'استعرض السير الذاتية لأعضاء هيئة التدريس في معهد عشتار للتقنيات الصحية',
     search_placeholder:'ابحث باسم التدريسي...', search_btn:'ابحث',
     filter_degree:'الشهادة', filter_title:'اللقب العلمي', filter_dept:'القسم', filter_all:'الكل',
@@ -15,6 +15,7 @@ export const translations = {
     tab_personal:'المعلومات الشخصية', tab_academic:'التحصيل الأكاديمي', tab_skills:'المهارات',
     tab_positions:'المناصب الوظيفية', tab_teaching:'خبرات التدريس', tab_awards:'الجوائز والشكر',
     tab_assoc:'الجمعيات المهنية', tab_pubs:'المنشورات العلمية', tab_links:'الروابط الأكاديمية',
+    tab_cv:'السيرة الذاتية', sec_cv:'السيرة الذاتية', cv_download:'تحميل السيرة الذاتية', cv_open:'عرض السيرة الذاتية', cv_available:'متوفرة', cv_no_file:'لا تتوفر سيرة ذاتية لهذا التدريسي', cv_file_format:'نوع الملف:', cv_format:'نوع الملف', cv_access:'حالة الملف', cv_updated:'آخر تحديث',
     field_name:'الاسم الكامل', field_gender:'الجنس', field_gender_m:'ذكر', field_gender_f:'أنثى',
     field_birth:'سنة الميلاد', field_nationality:'الجنسية', field_degree:'الشهادة',
     field_ac_title:'اللقب العلمي', field_formation:'التشكيل', field_dept:'القسم',
@@ -48,6 +49,7 @@ export const translations = {
     tab_personal:'Personal Info', tab_academic:'Academic History', tab_skills:'Skills',
     tab_positions:'Positions', tab_teaching:'Teaching Experience', tab_awards:'Awards',
     tab_assoc:'Associations', tab_pubs:'Publications', tab_links:'Academic Links',
+    tab_cv:'CV', sec_cv:'Curriculum Vitae', cv_download:'Download CV', cv_open:'View CV', cv_available:'Available', cv_no_file:'No CV available for this instructor', cv_file_format:'File type:', cv_format:'File Format', cv_access:'File Status', cv_updated:'Last Updated',
     field_name:'Full Name', field_gender:'Gender', field_gender_m:'Male', field_gender_f:'Female',
     field_birth:'Birth Year', field_nationality:'Nationality', field_degree:'Degree',
     field_ac_title:'Academic Title', field_formation:'Formation', field_dept:'Department',

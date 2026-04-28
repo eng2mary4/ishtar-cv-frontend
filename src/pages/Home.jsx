@@ -53,7 +53,10 @@ export default function Home() {
       <section className="hero">
         <div className="hero-inner">
           <div className="hero-pill au"><div className="hero-pill-dot"/>{t('hero_pill')}</div>
-          <h1 className="au1">{t('hero_title1')} <em>{t('hero_title2')}</em><br/>{t('hero_title3')}</h1>
+          <h1 className="au1">
+            الملاكات التدريسية في<br/>
+            <em>معهد عشتار الطبي التقني</em>
+          </h1>
           <p className="hero-desc au2">{t('hero_desc')}</p>
 
           <div style={{width:'100%'}}>
