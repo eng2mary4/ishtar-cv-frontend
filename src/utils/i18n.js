@@ -2,7 +2,7 @@ export const translations = {
   ar: {
     nav_instructors:'التدريسيون', nav_institute:'معهد عشتار الطبي', nav_sub:'ISHTAR MEDICAL INSTITUTE',
     hero_pill:'البوابة الأكاديمية الرسمية', hero_title1:'كوادر', hero_title2:'معهد عشتار', hero_title3:'الملاكات التدريسية في معهد عشتار الطبي التقني',
-    hero_desc:'استعرض السير الذاتية لأعضاء هيئة التدريس في معهد عشتار للتقنيات الصحية',
+    hero_desc:'استعرض السير الذاتية لأعضاء الهيئة التدريسية',
     search_placeholder:'ابحث باسم التدريسي...', search_btn:'ابحث',
     filter_degree:'الشهادة', filter_title:'اللقب العلمي', filter_dept:'القسم', filter_all:'الكل',
     stat_instructors:'تدريسي', stat_depts:'قسم', stat_pubs:'منشور', stat_visits:'زيارة',
