@@ -54,8 +54,8 @@ export default function Home() {
         <div className="hero-inner">
           <div className="hero-pill au"><div className="hero-pill-dot"/>{t('hero_pill')}</div>
           <h1 className="au1">
-            الملاكات التدريسية في<br/>
-            <em>معهد عشتار الطبي التقني</em>
+            {t('hero_title3_normal')}<br/>
+            <em>{t('hero_title3_em')}</em>
           </h1>
           <p className="hero-desc au2">{t('hero_desc')}</p>
 

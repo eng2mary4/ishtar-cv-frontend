@@ -2,6 +2,7 @@ export const translations = {
   ar: {
     nav_instructors:'التدريسيون', nav_institute:'معهد عشتار الطبي', nav_sub:'ISHTAR MEDICAL INSTITUTE',
     hero_pill:'البوابة الأكاديمية الرسمية', hero_title1:'كوادر', hero_title2:'معهد عشتار', hero_title3:'الملاكات التدريسية في معهد عشتار الطبي التقني',
+    hero_title3_normal:'الملاكات التدريسية في', hero_title3_em:'معهد عشتار الطبي التقني',
     hero_desc:'استعرض السير الذاتية لأعضاء الهيئة التدريسية',
     search_placeholder:'ابحث باسم التدريسي...', search_btn:'ابحث',
     filter_degree:'الشهادة', filter_title:'اللقب العلمي', filter_dept:'القسم', filter_all:'الكل',
@@ -35,7 +36,8 @@ export const translations = {
   },
   en: {
     nav_instructors:'Instructors', nav_institute:'Ishtar Medical Institute', nav_sub:'معهد عشتار الطبي',
-    hero_pill:'Official Academic Portal', hero_title1:'Faculty of', hero_title2:'Ishtar Institute',  hero_title3:'Distinguished Academics',
+    hero_pill:'Official Academic Portal', hero_title1:'Faculty of', hero_title2:'Ishtar Institute',  hero_title3:'Ishtar Technical Medical Institute Teaching Staff',
+    hero_title3_normal:'Teaching Staff at', hero_title3_em:'Ishtar Technical Medical Institute',
     hero_desc:'Browse CVs of faculty members at Ishtar Institute for Health Technologies',
     search_placeholder:'Search by instructor name...', search_btn:'Search',
     filter_degree:'Degree', filter_title:'Academic Title', filter_dept:'Department', filter_all:'All',
